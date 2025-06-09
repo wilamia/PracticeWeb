@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+.loader {
+    margin: 20px auto;
+    width: 80px;
+    height: 80px;
+    border: 8px solid lightgray;
+    border-top: 8px solid #3a9;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #3a9;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin: 30px auto;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        background-color: #3a9;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #2f8;
+    }
+}
+
+.figure {
+    width: 150px;
+    height: 150px;
+    background-color: coral;
+    color: white;
+    font-size: 20px;
+    line-height: 150px;
+    margin: 30px auto;
+    transform: rotate(10deg);
+    transition: transform 1s ease;
+}
+
+.figure:hover {
+    transform: translate(20px, 20px) scale(1.2) skew(10deg, 5deg);
+}
+
+.figure {
+    perspective: 600px;
+    transform: rotateY(0deg);
+}
+.figure:hover {
+    transform: rotateY(180deg);
+}
+
+.album {
+    width: 200px;
+    height: 150px;
+    margin: 40px auto;
+    perspective: 1200px;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #333;
+    line-height: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.front {
+    background-color: #3498db;
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.back {
+    background-color: #2ecc71;
+    transform: rotateY(180deg);
+}
+
+.album:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.album:hover .back {
+    transform: rotateY(0deg);
+    z-index: 3;
+}
