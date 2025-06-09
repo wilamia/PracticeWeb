@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* RESUME PAGE */
+.page.resume {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    background: #2c3e50;
+    color: white;
+    width: 30%;
+    min-width: 250px;
+    padding: 30px 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.sidebar .role {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.sidebar section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    border-bottom: 1px solid #555;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.main-content {
+    width: 70%;
+    padding: 40px;
+}
+
+.main-content section {
+    margin-bottom: 30px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.job h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+/* COVER LETTER PAGE */
+.page.cover-letter {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.page.cover-letter h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.page.cover-letter p {
+    font-size: 16px;
+    white-space: pre-line;
+}
+
+/* DIVIDER */
+.divider {
+    margin: 60px auto;
+    width: 80%;
+    border: none;
+    border-top: 2px dashed #ccc;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 1023px) {
+    .page.resume {
+        flex-direction: column;
+    }
+
+    .sidebar, .main-content {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 30px;
+    }
+
+    .page.cover-letter {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sidebar h1 {
+        font-size: 20px;
+    }
+
+    .sidebar .role {
+        font-size: 14px;
+    }
+
+    .main-content h2,
+    .sidebar h2,
+    .page.cover-letter h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    body {
+        font-size: 14px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .sidebar,
+    .main-content,
+    .page.cover-letter {
+        padding: 15px;
+    }
+
+    .main-content h2,
+    .sidebar h2,
+    .page.cover-letter h2 {
+        font-size: 16px;
+    }
+}
