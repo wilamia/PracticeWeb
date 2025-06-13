@@ -1,0 +1,12 @@
+#jqui1 {
+    width: 200px;
+    height: 150px;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid #007acc;
+    margin-bottom: 30px;
+}
+
+#tabs {
+    width: 400px;
+}
