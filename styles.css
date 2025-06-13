@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+#linkCountBlock {
+    margin-top: 20px;
+    font-weight: normal;
+}
+
+#linkCountBlock em {
+    font-style: italic;
+}
+
+ol {
+    margin-top: 20px;
+    padding-left: 20px;
+}
