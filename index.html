@@ -1,10 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Форма сотрудника ж/д станции</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="form-container">
+    <h2>Форма сотрудника железнодорожной станции</h2>
+    <form id="employeeForm">
+        <label>ФИО:
+            <input type="text" name="fullname" required />
+        </label>
+
+        <label>Должность:
+            <input type="text" name="position" required />
+        </label>
+
+        <label>Стаж (в годах):
+            <input type="number" name="experience" required />
+        </label>
+
+        <label>Email:
+            <input type="email" name="email" required />
+        </label>
+
+        <label>Телефон:
+            <input type="tel" name="phone" required />
+        </label>
+
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+<!-- Подключение скриптов -->
+<script src="libs/jquery.min.js"></script>
+<script src="libs/jquery.validate.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
