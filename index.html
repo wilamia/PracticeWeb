@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Интерактивный плакат jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .poster {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .element {
+            padding: 15px;
+            margin: 10px 0;
+            border: 2px dashed #999;
+            background-color: #eef;
+            text-align: center;
+        }
+        .methods {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .methods button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            transition: background 0.3s;
+        }
+        .methods button:hover {
+            background-color: #2980b9;
+        }
+    </style>
 </head>
 <body>
+<div class="poster">
+    <h2>Методы jQuery для работы с содержимым</h2>
+    <div id="container">
+        <div id="target" class="element">Это содержимое элемента #target</div>
+    </div>
+    <div class="methods">
+        <button id="htmlBtn" title="html() – устанавливает или получает HTML-содержимое элемента">html()</button>
+        <button id="textBtn" title="text() – устанавливает или получает текстовое содержимое элемента">text()</button>
+        <button id="valBtn" title="val() – устанавливает или получает значение формы">val()</button>
+        <button id="appendBtn" title="append() – добавляет содержимое в конец выбранного элемента">append()</button>
+        <button id="prependBtn" title="prepend() – добавляет содержимое в начало выбранного элемента">prepend()</button>
+        <button id="afterBtn" title="after() – вставляет содержимое сразу после выбранного элемента">after()</button>
+        <button id="beforeBtn" title="before() – вставляет содержимое сразу перед выбранным элементом">before()</button>
+        <button id="emptyBtn" title="empty() – удаляет все дочерние элементы и содержимое">empty()</button>
+        <button id="removeBtn" title="remove() – удаляет элемент из DOM полностью">remove()</button>
+        <button id="replaceBtn" title="replaceWith() – заменяет выбранный элемент другим">replaceWith()</button>
+        <button id="clearFieldBtn" title="Очистить содержимое текстового поля ввода">Очистить поле</button>
+        <button id="clearAllBtn" title="Удалить элементы, добавленные методами before() и after()">Удалить окружение</button>
+    </div>
+</div>
+<input type="text" id="inputField" placeholder="Введите значение для val()" style="display:block; margin: 20px auto; padding: 8px; width: 30%">
 
+<script>
+    $(function() {
+        $('#htmlBtn').click(() => $('#target').html('<b>HTML вставка</b>'));
+        $('#textBtn').click(() => $('#target').text('Просто текст'));
+        $('#valBtn').click(() => alert($('#inputField').val()));
+        $('#appendBtn').click(() => $('#target').append(' <span>+добавлено в конец</span>'));
+        $('#prependBtn').click(() => $('#target').prepend('<span>Вставлено сначала+ </span>'));
+        $('#afterBtn').click(() => $('#target').after('<div class="temp">После элемента</div>'));
+        $('#beforeBtn').click(() => $('#target').before('<div class="temp">Перед элементом</div>'));
+        $('#emptyBtn').click(() => $('#target').empty());
+        $('#removeBtn').click(() => $('#target').remove());
+        $('#replaceBtn').click(() => $('#target').replaceWith('<div id="target" class="element">Элемент заменён!</div>'));
+        $('#clearFieldBtn').click(() => $('#inputField').val(''));
+        $('#clearAllBtn').click(() => $('.temp').remove());
+    });
+</script>
 </body>
 </html>
