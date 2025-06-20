@@ -1,10 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
+    <div class="container px-4">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#why">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#coaches">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#trainers">Contact</a></li>
+            </ul>
+            <a class="btn btn-outline-light ms-lg-0 ms-auto" href="#">Join Now</a>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1 class="display-4" style="font-size: 72px; font-family:'Rubik', sans-serif; color: #E0E0E0; font-weight: bold">Elevate your<br>workout</h1>
+        <p class="lead" style="font-size: 18px; font-family:'TT Travels Regular', sans-serif; color: #BDBDBD; font-weight: lighter; width: 50%">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+        <a href="#" class="btn btn-light btn-lg mt-3">Get Started</a>
+    </div>
+</section>
+
+<section class="stats text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col"><h4>5+</h4>
+                <p>New Branches</p></div>
+            <div class="col"><h4>10+</h4>
+                <p>Certified Coaches</p></div>
+            <div class="col"><h4>786+</h4>
+                <p>Happy Clients</p></div>
+            <div class="col"><h4>95%</h4>
+                <p>Success Rate</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="why" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center my-4">
+            <h2 class="fw-bold" style="color: #424242; font-family: 'Rubik', sans-serif;">
+                Why Choose Us
+            </h2>
+            <p class="text-muted mt-2" style="font-family: 'Rubik', sans-serif; color: #9E9E9E">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 d-flex align-items-center mb-4">
+                <div class="row g-4">
+                    <div class="col-sm-6 d-flex  mb-5">
+
+                    <div class="me-3">
+                            <div class="bg-dark text-white rounded-circle p-1">
+                                <img src="images/equipment.png" alt="equipment" width="24" height="24">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Lorem Ipsum amid</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex  mb-5">
+
+                    <div class="me-3">
+                            <div class="bg-dark text-white rounded-circle p-1">
+                                <img src="images/award.png" alt="equipment" width="24" height="24">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Lorem Ipsum amid</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex  mb-5">
+
+                    <div class="me-3">
+                            <div class="bg-dark text-white rounded-circle p-1">
+                                <img src="images/boxing.png" alt="equipment" width="24" height="24">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Lorem Ipsum amid</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 d-flex  mb-5">
+
+                    <div class="me-3">
+                            <div class="bg-dark text-white rounded-circle p-1">
+                                <img src="images/yoga.png" alt="equipment" width="24" height="24">
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold">Lorem Ipsum amid</h5>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row g-1">
+                    <div class="col-6 d-flex flex-column gap-1">
+                        <img src="images/gym_image1.png" class="img-fluid rounded w-100" alt="Gym Image 1">
+                        <img src="images/gym_image2.png" class="img-fluid rounded w-100" alt="Gym Image 3">
+                    </div>
+
+                    <div class="col-6">
+                        <img src="images/gym_image3.png" class="img-fluid rounded w-100 h-100 object-fit-cover"
+                             alt="Gym Image 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="coaches" class="py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-lg-6 d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                <img src="images/woman_trainer.png" class="img-fluid rounded" alt="Woman Trainer"
+                     style="width: 100%; max-width: 200px;">
+                <img src="images/man_trainer.png" class="img-fluid rounded" alt="Man Trainer"
+                     style="width: 100%; max-width: 300px;">
+            </div>
+
+            <div class="col-lg-6 text-center text-lg-start">
+                <p class="text-muted mb-1">Are you looking for a Mentor?</p>
+                <h2 class="fw-bold">Coaches</h2>
+                <p class="text-secondary">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et. Lorem ipsum dolor sit ...
+                </p>
+                <a href="#" class="btn btn-dark mt-2">Explore More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="trainers-section">
+    <h2>Meet Our Trainers</h2>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et
+    </p>
+
+    <div class="trainers-grid">
+        <img src="images/Frame.png" class="img1"/>
+        <img src="images/Frame-1.png" class="img2"/>
+        <img src="images/Frame-2.png" class="img3"/>
+        <img src="images/Frame-6.png" class="img4"/>
+        <img src="images/Frame-5.png" class="img5"/>
+        <img src="images/Frame-4.png" class="img6"/>
+    </div>
+</section>
+
+<section id="pricing" class="py-5 bg-light">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5 flex-wrap">
+            <div>
+                <p class="text-muted mb-1">Pricing Plan</p>
+                <h2 class="fw-bold display-5 m-0">JOIN TODAY</h2>
+            </div>
+
+            <div class="d-flex align-items-center mt-4 mt-md-0">
+                <div class="d-inline-flex border rounded-pill p-1 shadow-sm">
+                    <button class="btn btn-light rounded-pill px-4">Monthly</button>
+                    <button class="btn btn-dark rounded-pill px-4">Yearly</button>
+                </div>
+            </div>
+        </div>
+        <div class="container text-start">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column">
+                        <h6 class="text-muted">Beginner Plan</h6>
+                        <h2 class="fw-bold">$10 <small class="text-muted fs-5">/ Month</small></h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-dark w-100 mt-auto">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="bg-dark text-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column">
+                        <h6 class="text-white">Premium Plan</h6>
+                        <h2 class="fw-bold">$15 <small class="text-light fs-5">/ Month</small></h2>
+                        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-white me-2"></i>Lorem ipsum dolor
+                                sit amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-white me-2"></i>Lorem ipsum dolor
+                                sit amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-white me-2"></i>Lorem ipsum dolor
+                                sit amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-white me-2"></i>Lorem ipsum dolor
+                                sit amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-white me-2"></i>Lorem ipsum dolor
+                                sit amet,
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-light w-100 mt-auto">Choose Plan</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="bg-white rounded-4 shadow-sm p-4 h-100 d-flex flex-column">
+                        <h6 class="text-muted">Premium Plan</h6>
+                        <h2 class="fw-bold">$20 <small class="text-muted fs-5">/ Month</small></h2>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt</p>
+                        <ul class="list-unstyled text-start">
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                            <li class="mb-2"><i class="bi bi-check-circle-fill text-dark me-2"></i>Lorem ipsum dolor sit
+                                amet,
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-dark w-100 mt-auto">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg-white">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <div>
+                <p class="text-muted">Reviews</p>
+                <h2 class="fw-bold display-5">YOUR OPINIONS</h2>
+            </div>
+            <button class="btn btn-dark rounded-pill px-4 py-2">+ Your Opinions</button>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 d-flex flex-wrap justify-content-center align-items-center gap-0">
+                <img src="images/Ellipse%207.png"
+                     style="width: 180px; height: 180px; object-fit: cover;">
+                <img src="images/Ellipse%209.png" style="width: 120px; height: 120px; object-fit: cover;">
+                <img src="images/Ellipse%208.png"
+                     style="width: 180px; height: 180px; object-fit: cover;">
+                <img src="images/Ellipse%206.png"
+                     style="width: 150px; height: 150px; object-fit: cover;">
+            </div>
+
+            <div class="col-md-7">
+                <div class="d-flex overflow-auto gap-3">
+                    <div class="bg-white border rounded-4 shadow-sm p-4" style="min-width: 300px;">
+                        <h5 class="fw-bold mb-1">Kerry Rohan</h5>
+                        <img src="images/stars.svg" style="margin-bottom: 24px; margin-top: 12px">
+                        <p class="text-muted mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div class="bg-white border rounded-4 shadow-sm p-4" style="min-width: 300px;">
+                        <h5 class="fw-bold mb-1">Kerry Rohan</h5>
+                        <img src="images/stars.svg" style="margin-bottom: 24px; margin-top: 12px">
+                        <p class="text-muted mb-0">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-5 d-flex gap-1">
+                    <button class="btn btn-dark rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 45px; height: 45px;">
+                        <img src="images/arrow-left.png" alt="" style="width: 16px; height: 16px;">
+                    </button>
+
+                    <button class="btn btn-outline-dark rounded-circle d-flex justify-content-center align-items-center"
+                            style="width: 45px; height: 45px;">
+                        <img src="images/arrow-right.png" alt="" style="width: 16px; height: 16px;">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-center py-5 text-white"
+         style="background-image: url('images/background.png');
+                background-size: cover;
+                background-position: center;
+                height: 425px;
+                display: flex;
+                align-items: center;
+                justify-content: center;">
+    <div class="container">
+        <h5 class="mb-2">Call Us Now</h5>
+        <h2 class="fw-bold">+91 82000-60000</h2>
+    </div>
+</section>
+
+<footer class="bg-light pt-5">
+    <div class="container">
+        <div class="row text-start text-muted">
+            <div class="col-md-3 mb-4">
+                <img src="images/logo_black.png" alt="Fit Guru Logo" style="height: 40px;" class="mb-3">
+                <p>Recusandae quos nesciunt veniam eum quia</p>
+                <p>shaikhsaad256@gmail.com</p>
+                <div class="gx-4">
+                    <img src="images/001-facebook-logo-button.png" alt="Facebook Logo" style="height: 18.34px;" class="me-2">
+                    <img src="images/002-twitter.png" alt="Twitter Logo" style="height: 18.34px;" class="me-2">
+                    <img src="images/004-vimeo-social-logo.png" alt="Instagram Logo" style="height: 18.34px;">
+                </div>
+                <div>
+                    <a href="#"><i class="fab fa-facebook-f me-3"></i></a>
+                    <a href="#"><i class="fab fa-twitter me-3"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h6 class="fw-bold">Quick Links</h6>
+                <p>Home</p>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Contact</p>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Lorem Ipsum</h6>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Lorem Ipsum</h6>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+            </div>
+            <div class="col-md-2 mb-4">
+                <h6 class="fw-bold">Lorem Ipsum</h6>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+                <p>Lorem</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
